@@ -1,0 +1,17 @@
+-d F:\workspace\gowin\lcd_init\impl\gwsynthesis\lcd_init.vg
+-p GW5AT-60B-PBGA484A-1
+-pn GW5AT-LV60PG484AC1/I0
+-cst F:\workspace\gowin\lcd_init\src\LCD_PINS_SET.cst
+-cfg F:\workspace\gowin\lcd_init\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-oreg_not_in_iob
+-replicate
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-clock_route_order 1
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000

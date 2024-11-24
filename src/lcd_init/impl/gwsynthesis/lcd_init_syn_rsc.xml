@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="tft_colorbar" Register="1" Lut="2" T_Register="104(1)" T_Lut="207(2)" T_Bsram="1(0)">
+    <SubModule name="Gowin_OSC_init"/>
+    <SubModule name="lcd_initiator_init" Register="74" Lut="125" Bsram="1" T_Register="74(74)" T_Lut="125(125)" T_Bsram="1(1)"/>
+    <SubModule name="Gowin_PLL_init"/>
+    <SubModule name="tft_ctrl_inst" Register="22" Lut="56" T_Register="22(22)" T_Lut="56(56)"/>
+    <SubModule name="tft_pic_inst" Register="7" Lut="24" T_Register="7(7)" T_Lut="24(24)"/>
+</Module>

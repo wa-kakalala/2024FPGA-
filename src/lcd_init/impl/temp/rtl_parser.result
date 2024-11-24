@@ -1,0 +1,60 @@
+[
+ {
+  "InstFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_colorbar.v",
+  "InstLine" : 1,
+  "InstName" : "tft_colorbar",
+  "ModuleFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_colorbar.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "tft_colorbar",
+  "SubInsts" : [
+   {
+    "InstFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_colorbar.v",
+    "InstLine" : 36,
+    "InstName" : "Gowin_OSC_init",
+    "ModuleFile" : "F:/workspace/gowin/lcd_init/src/gowin_osc/gowin_osc.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_OSC"
+   },
+   {
+    "InstFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_colorbar.v",
+    "InstLine" : 45,
+    "InstName" : "lcd_initiator_init",
+    "ModuleFile" : "F:/workspace/gowin/lcd_init/src/LCD_SPI.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "lcd_initiator"
+   },
+   {
+    "InstFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_colorbar.v",
+    "InstLine" : 57,
+    "InstName" : "Gowin_PLL_init",
+    "ModuleFile" : "F:/workspace/gowin/lcd_init/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_colorbar.v",
+    "InstLine" : 68,
+    "InstName" : "tft_ctrl_inst",
+    "ModuleFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_ctrl.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "tft_ctrl"
+   },
+   {
+    "InstFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_colorbar.v",
+    "InstLine" : 86,
+    "InstName" : "tft_pic_inst",
+    "ModuleFile" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_pic.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "tft_pic"
+   }
+  ]
+ },
+ {
+  "InstFile" : "F:/workspace/gowin/lcd_init/src/pll.v",
+  "InstLine" : 23,
+  "InstName" : "pll",
+  "ModuleFile" : "F:/workspace/gowin/lcd_init/src/pll.v",
+  "ModuleLine" : 23,
+  "ModuleName" : "pll"
+ }
+]

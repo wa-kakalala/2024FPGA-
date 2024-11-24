@@ -1,0 +1,41 @@
+{
+ "Device" : "GW5AT-60B",
+ "Files" : [
+  {
+   "Path" : "F:/workspace/gowin/lcd_init/src/LCD_SPI.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_colorbar.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/workspace/gowin/lcd_init/src/TFT_LCD/tft_pic.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/workspace/gowin/lcd_init/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/workspace/gowin/lcd_init/src/pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/workspace/gowin/lcd_init/src/gowin_osc/gowin_osc.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "F:/workspace/gowin/lcd_init/impl/temp/rtl_parser.result",
+ "Top" : "tft_colorbar",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

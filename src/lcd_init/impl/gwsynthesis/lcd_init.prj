@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5AT-60B" package="PBGA484A" speed="1" partNumber="GW5AT-LV60PG484AC1/I0"/>
+    <FileList>
+        <File path="F:\workspace\gowin\lcd_init\src\LCD_SPI.v" type="verilog"/>
+        <File path="F:\workspace\gowin\lcd_init\src\TFT_LCD\tft_colorbar.v" type="verilog"/>
+        <File path="F:\workspace\gowin\lcd_init\src\TFT_LCD\tft_ctrl.v" type="verilog"/>
+        <File path="F:\workspace\gowin\lcd_init\src\TFT_LCD\tft_pic.v" type="verilog"/>
+        <File path="F:\workspace\gowin\lcd_init\src\gowin_pll\gowin_pll.v" type="verilog"/>
+        <File path="F:\workspace\gowin\lcd_init\src\pll.v" type="verilog"/>
+        <File path="F:\workspace\gowin\lcd_init\src\gowin_osc\gowin_osc.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="F:\workspace\gowin\lcd_init\impl\gwsynthesis\lcd_init.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="tft_colorbar"/>
+        <Option type="vcc" value="0.9"/>
+        <Option type="vccx" value="3.3"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
