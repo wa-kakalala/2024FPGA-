@@ -143,7 +143,8 @@ end
 initial begin
     @(posedge io_axiClk);
     io_asyncReset <= 1'b0; 
-    repeat( 100_000 ) @(posedge io_axiClk);
+    @(posedge io_axiClk);
+    // repeat( 100_000 ) @(posedge io_axiClk);
     // $display( " running ..." );
     // for( int i=0;i<data.size(); ) begin 
     //     @(posedge io_axiClk);
@@ -156,9 +157,9 @@ initial begin
     //         tx_din   <= 'b0;
     //         tx_wr_en <= 1'b0;
     // end
-   
-    for( int i=0;i<1000000;i++)
-        repeat(2_147_483_648) @(posedge io_axiClk);
+    for( int i=0;i<1000;i++) begin 
+        repeat(100_000_000) @(posedge io_axiClk);
+    end
     $stop;
 end
 

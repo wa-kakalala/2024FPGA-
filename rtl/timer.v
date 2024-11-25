@@ -19,6 +19,14 @@ module timer # (
     output                     o_interrupt
 );
 
+
+// initial begin 
+//     $monitor("@%0t,i_value:%0d,i_prescale:%0d,i_clear:%0d,i_enable:%0d,o_interrupt:%0d",$time,i_value,i_prescale,i_clear,i_enable,o_interrupt);
+// end
+
+
+
+
 wire              tick    ;
 
 reg  [N_REG-1:0]  pre_cnt ;
@@ -58,6 +66,6 @@ always @( posedge i_clk or posedge i_rst ) begin
     end
 end 
 
-assign o_interrupt = (counter >= i_value - 1'b1) ? 1'b1 : 1'b0; 
+assign o_interrupt = (i_enable && (counter >= i_value - 1'b1)) ? 1'b1 : 1'b0; 
 
 endmodule
