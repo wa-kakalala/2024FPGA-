@@ -17,7 +17,7 @@ void uart_init(){
 }
 
 void timer_init(){
-    timer_set_pre(TIMER,50);  // 10 MHz 's clk
+    timer_set_pre(TIMER,50);  // 1 MHz 's clk
     timer_set_value(TIMER,10000) ; // 10ms 's preiod 
     timer_clear(TIMER);
     timer_enable(TIMER);
