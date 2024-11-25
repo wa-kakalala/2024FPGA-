@@ -8,8 +8,10 @@ uint32_t uart_read_occu(uart_s *reg){
 }
 
 void uart_write(uart_s *reg, uint32_t data){
+	
 	while(uart_write_avail(reg) == 0);
 	reg->data = data;
+	
 }
 
 uint8_t uart_read(uart_s *reg) {
@@ -55,12 +57,13 @@ static void printf_d(int val)
 }
 
 void display(const char *format, ...) {
+	disable_global_interrupts();
 	int i;
 	va_list ap;
 
 	va_start(ap, format);
 
-	for (i = 0; format[i]; i++)
+	for (i = 0; format[i]; i++) {
 		if (format[i] == '%') {
 			while (format[++i]) {
 				if (format[i] == 'c') {
@@ -76,10 +79,12 @@ void display(const char *format, ...) {
 					break;
 				}
 			}
-		} else
+		} else {
 			printf_c(format[i]);
-
+		}
+	}
 	va_end(ap);
+	enable_global_interrupts();
 }
 
 __attribute__((weak)) ssize_t _write(int fd, const void* ptr, size_t len)
