@@ -22,9 +22,9 @@ module briey_ram (
 //   input  wire [31:0]   io_int
 );
 
-wire [7:0]    io_ext_interrupt ;
-wire          io_coreInterrupt ;
-wire          io_timerInterrupt;
+    wire [7:0]    io_ext_interrupt ;
+    wire          io_coreInterrupt ;
+    wire          io_timerInterrupt;
 
   wire       [3:0]    axi_gpioCtrl_io_apb_PADDR;
   wire       [7:0]    axi_timerCtrl_io_apb_PADDR;

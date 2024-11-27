@@ -24,9 +24,6 @@ module timer # (
 //     $monitor("@%0t,i_value:%0d,i_prescale:%0d,i_clear:%0d,i_enable:%0d,o_interrupt:%0d",$time,i_value,i_prescale,i_clear,i_enable,o_interrupt);
 // end
 
-
-
-
 wire              tick    ;
 
 reg  [N_REG-1:0]  pre_cnt ;
